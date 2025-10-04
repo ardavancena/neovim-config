@@ -25,6 +25,7 @@ return {
   { "romainl/Apprentice" },
   { "mhartington/oceanic-next", name = "OceanicNext", lazy = true },
   { "nanotech/jellybeans.vim", lazy = true },
+  { "projekt0n/github-nvim-theme", lazy = true },
 
   { "stevearc/dressing.nvim", event = "VeryLazy" }, -- optional picker UI
 }

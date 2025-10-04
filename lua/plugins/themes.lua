@@ -9,14 +9,31 @@ local themes = {
   "tokyonight","gruvbox","catppuccin","kanagawa","melange","onedark",
   "nightfox","rose-pine","monokai-pro","nord","material","moonfly",
   "everforest","doom-one","ayu","edge","aurora","zephyr","oxocarbon",
-  "palenight","horizon","vscode","apprentice","OceanicNext","jellybeans",
+  "palenight","horizon","vscode","apprentice","OceanicNext","jellybeans", "github",
 }
 
 local index = 0
 
 -- helper: try to set a theme name, return true on success
+-- replace with this:
 local function try_set(theme)
-  local ok, _ = pcall(vim.cmd.colorscheme, theme)
+  local ok, _ = pcall(function()
+    if theme == "github" then
+      require("github-theme").setup({
+        theme_style = "dark",        -- still dark
+        dark_float = true,            -- make floating windows dark
+        dark_sidebar = true,          -- make sidebars dark
+        transparency = false,         -- full background, no gray overlay
+        comment_style = "italic",
+        keyword_style = "bold",
+        function_style = "italic",
+        variable_style = "NONE",
+      })
+      vim.cmd.colorscheme("github_dark")
+    else
+      vim.cmd.colorscheme(theme)
+    end
+  end)
   return ok
 end
 
