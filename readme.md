@@ -94,9 +94,11 @@ If you have your neovim config in another folder then you have to specify where 
 - `gd` – Go to definition
 - `gD` – Go to Decleration
 - `<leader>ca` – Code actions
-- `<leader>p` – telescope(view files and search for them)
+- `<leader>p` – telescope(view files and search for them)<br>
 
-**`<leader>`th – THEME SWITCHER**
+- THEMES:
+**`    <leader>`th – THEME SWITCHER**
+**`    <leader>nt – NEXT THEME`**
 
 ***leader = space <- (important)***
 
