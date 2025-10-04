@@ -106,7 +106,7 @@ If you have your neovim config in another folder then you have to specify where 
 
 ```
 ~/.config/nvim/
-├── README.md
+├── readme.md
 ├── init.lua
 ├── lazy-lock.json
 ├── lua/
