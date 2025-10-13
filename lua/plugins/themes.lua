@@ -6,10 +6,12 @@
 
 local themes = {
   "default",
-  "tokyonight","gruvbox","catppuccin","kanagawa","melange","onedark",
-  "nightfox","rose-pine","monokai-pro","nord","material","moonfly",
-  "everforest","doom-one","ayu","edge","aurora","zephyr","oxocarbon",
-  "palenight","horizon","vscode","apprentice","OceanicNext","jellybeans", "github",
+  "tokyonight", "gruvbox", "catppuccin", "kanagawa", "melange", "onedark",
+  "nightfox", "rose-pine", "monokai-pro", "nord", "material", "moonfly",
+  "everforest", "doom-one", "ayu", "edge", "aurora", "zephyr", "oxocarbon",
+  "palenight", "horizon", "vscode", "apprentice", "OceanicNext", "jellybeans", "github",
+  "dracula", "sonokai", "nordic", "tokyodark", "bamboo", "monokai-nightasty",
+  "obscure", "solarized-osaka", "one-nvim", "solarized", "neon", "sherbet", "space-nvim",
 }
 
 local index = 0

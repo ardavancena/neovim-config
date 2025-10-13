@@ -26,6 +26,25 @@ return {
   { "mhartington/oceanic-next", name = "OceanicNext", lazy = true },
   { "nanotech/jellybeans.vim", lazy = true },
   { "projekt0n/github-nvim-theme", lazy = true },
+  { "Mofiqul/dracula.nvim", lazy = true },
+  { "sainnhe/sonokai", lazy = true },
+  { "olimorris/onedarkpro.nvim", priority = 1000, lazy = true },
+  { "AlexvZyl/nordic.nvim", lazy = true },
+  { "tiagovla/tokyodark.nvim", lazy = true },
+  { "ribru17/bamboo.nvim", lazy = true },
+  { "polirritmico/monokai-nightasty.nvim", lazy = true },
+  { "killitar/obscure.nvim", lazy = true },
+  { "craftzdog/solarized-osaka.nvim", lazy = true },
+  { "Th3Whit3Wolf/one-nvim", lazy = true },
+  { "flazz/vim-colorschemes", lazy = true },
+  { "shaunsingh/solarized.nvim", lazy = true },
+  { "f-person/auto-dark-mode.nvim", lazy = true },
+  { "rafamadriz/neon", lazy = true },
+  { "adisen99/apprentice.nvim", lazy = true },          -- correct apprentice.nvim
+  { "lewpoly/sherbet.nvim", lazy = true },               -- confirmed sherbet.nvim repo
+  { "altercation/vim-colors-solarized", lazy = true },  -- solarized
+  { "Th3Whit3Wolf/space-nvim", lazy = true },           -- optional, only if repo exists
+
 
   { "stevearc/dressing.nvim", event = "VeryLazy" }, -- optional picker UI
 }
