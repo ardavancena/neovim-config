@@ -18,9 +18,6 @@ require("vim-options")
 require("lazy").setup("plugins")
 
 -- colorscheme (safe load)
-pcall(function()
-  require("catppuccin").setup()
-  vim.cmd.colorscheme("catppuccin")
-end)
+vim.cmd.colorscheme("palenight")
 
 vim.cmd.colorscheme()

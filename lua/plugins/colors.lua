@@ -28,7 +28,6 @@ return {
   { "projekt0n/github-nvim-theme", lazy = true },
   { "Mofiqul/dracula.nvim", lazy = true },
   { "sainnhe/sonokai", lazy = true },
-  { "olimorris/onedarkpro.nvim", priority = 1000, lazy = true },
   { "AlexvZyl/nordic.nvim", lazy = true },
   { "tiagovla/tokyodark.nvim", lazy = true },
   { "ribru17/bamboo.nvim", lazy = true },
