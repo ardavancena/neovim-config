@@ -28,6 +28,11 @@ If you have your neovim config in another folder then you have to specify where 
 
 ---
 
+$$
+\int_0^\infty e^{-x} dx = 1
+$$
+
+
 ### Mason – LSP, DAP, linters, formatters
 ```vim
 :Mason

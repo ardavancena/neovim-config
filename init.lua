@@ -10,9 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
-vim.opt.rtp:prepend(lazypath) 
-
-local opts = {}
+vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
@@ -21,3 +19,5 @@ require("lazy").setup("plugins")
 vim.cmd.colorscheme("palenight")
 
 vim.cmd.colorscheme()
+
+vim.env.ASM_LSP_CONFIG = vim.fn.expand('~/asm-lsp.toml')

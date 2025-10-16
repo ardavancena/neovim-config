@@ -1,0 +1,5 @@
+
+[settings]
+syntax_check = true
+include_paths = ["~/asm/includes"]  # optional
+output_format = "intel"             # or "att"
