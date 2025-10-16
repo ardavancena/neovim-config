@@ -5,7 +5,16 @@ return {
   { "catppuccin/nvim", name = "catppuccin", lazy = true },
   { "rebelot/kanagawa.nvim", lazy = true },
   { "savq/melange-nvim", lazy = true },
-  { "navarasu/onedark.nvim", lazy = true },
+  {
+    "navarasu/onedark.nvim",
+    priority = 1000,
+    config = function()
+      require("onedark").setup {
+        style = "warmer",
+      }
+      require("onedark").load()
+    end,
+  },
   { "EdenEast/nightfox.nvim", lazy = true },
   { "rose-pine/neovim", name = "rose-pine", lazy = true },
   { "loctvl842/monokai-pro.nvim", lazy = true },
