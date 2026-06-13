@@ -50,6 +50,9 @@ return {
           "cssls",
           "vimls",
           "clangd",
+          "bashls",
+          "c3lsp",
+          "Omnisharp"
       }
 
       for _, server in ipairs(servers) do

@@ -16,16 +16,14 @@ local themes = {
 
 local index = 0
 
--- helper: try to set a theme name, return true on success
--- replace with this:
 local function try_set(theme)
   local ok, _ = pcall(function()
     if theme == "github" then
       require("github-theme").setup({
-        theme_style = "dark",        -- still dark
-        dark_float = true,            -- make floating windows dark
-        dark_sidebar = true,          -- make sidebars dark
-        transparency = false,         -- full background, no gray overlay
+        theme_style = "dark",
+        dark_float = true,
+        dark_sidebar = true,
+        transparency = false,
         comment_style = "italic",
         keyword_style = "bold",
         function_style = "italic",
