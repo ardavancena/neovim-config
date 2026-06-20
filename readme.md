@@ -100,6 +100,7 @@ $$
 - `gD` – Go to Decleration
 - `<leader>ca` – Code actions
 - `<leader>p` – telescope(view files and search for them)<br>
+- `Ctrl+N` - Neotree(lets you see your files, edit, rename, delete.... them)
 
 - THEMES:<br>
 **`<leader>th – THEME SWITCHER`**<br>
