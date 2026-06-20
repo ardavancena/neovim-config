@@ -1,7 +1,7 @@
 
-# 🧠 Neovim Configuration
+# Neovim Configuration
 
-A modular, feature-rich Neovim setup powered by [lazy.nvim](https://github.com/folke/lazy.nvim). Designed for fast startup, deep language support, and a clean UI.
+A modular, feature-rich Neovim setup powered by [lazy.nvim](https://github.com/folke/lazy.nvim). Designed for fast startup, deep language support(C, C++, Lua, Go...), and a clean UI
 
 ![Neovim Logo](assets/nvim.png)
 
@@ -11,7 +11,7 @@ A modular, feature-rich Neovim setup powered by [lazy.nvim](https://github.com/f
 
 ---
 
-## 🚀 Core Setup
+## Core Setup
 
 ### lazy.nvim – Fast plugin management
 
@@ -24,7 +24,7 @@ git clone https://github.com/folke/lazy.nvim ~/.config/nvim/lazy
 git clone https://github.com/folke/lazy.nvim %USERPROFILE%\AppData\Local\nvim\lazy
 ```
 
-If you have your neovim config in another folder then you have to specify where git will clone lazy.nvim to!!
+If you have your neovim config in another folder then you have to specify where git should clone lazy.nvim to!!
 
 ---
 
@@ -58,7 +58,7 @@ $$
 
 ---
 
-## ✨ Features
+## Features
 
 - Lazy-loaded plugins for fast startup
 - Autocompletion via `nvim-cmp` and `LuaSnip`
@@ -82,7 +82,7 @@ $$
 
 ---
 
-## 🧩 Plugin Management
+## Plugin Management
 
 ```vim
 :Lazy         " Check plugin status
@@ -93,7 +93,7 @@ $$
 
 ---
 
-## 🧠 Key Mappings
+## Key Mappings
 
 - `K` – Hover info about the keyword or functions(if the lsps support it it will work for anything)
 - `gd` – Go to definition
@@ -110,7 +110,7 @@ $$
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ~/.config/nvim/
@@ -136,7 +136,7 @@ $$
 │   └── vim-options.lua
 ├── node_modules/
 │   └── 22/
-│       ├── README.md
+│       ├── readme.md
 │       └── package.json
 ├── package-lock.json
 ├── package.json
@@ -193,7 +193,7 @@ nvim
 
 ---
 
-### 📝 **Post-Installation**
+### **Post-Installation**
 
 Once inside Neovim, run:
 
@@ -206,7 +206,7 @@ After everything is set up, restart Neovim to apply the changes.
 
 ---
 
-✨ **That’s it!** You now have a fully featured Neovim configuration ready to go.
+**That’s it!** You now have a fully featured Neovim configuration ready to go!
 
 ---
 
