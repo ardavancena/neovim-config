@@ -5,7 +5,7 @@ A modular, feature-rich Neovim setup powered by [lazy.nvim](https://github.com/f
 
 ![Neovim Logo](assets/nvim.png)
 
-**Repository:** [https://github.com/ardavancena/neovim-config-v0.11.4](https://github.com/ardavancena/neovim-config-v0.11.4)  
+**Repository:** [https://github.com/ardavancena/neovim-config](https://github.com/ardavancena/neovim-config)  
 **Author:** Ardavan Najafzadeh  
 **Email:** ardavan.najafzadeh@gmail.com
 
@@ -144,9 +144,9 @@ $$
 
 ---
 
-## 📦 Installation
+## Installation
 
-### 🐧 **Linux**
+### **Linux**
 
 💡 *Hint:* If you already have an existing Neovim config, back it up first:
 
@@ -158,7 +158,7 @@ Then clone the new configuration:
 
 ```bash
 mkdir -p ~/.config/nvim
-git clone https://github.com/ardavancena/neovim-config-v0.11.4.git ~/.config/nvim
+git clone https://github.com/ardavancena/neovim-config.git ~/.config/nvim
 ```
 
 Finally, launch Neovim to let **lazy.nvim** install all plugins:
