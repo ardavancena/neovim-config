@@ -148,7 +148,7 @@ $$
 
 ### **Linux**
 
-💡 *Hint:* If you already have an existing Neovim config, back it up first:
+*Hint:* If you already have an existing Neovim config, back it up first:
 
 ```bash
 mv ~/.config/nvim ~/.config/nvim.backup
@@ -169,9 +169,9 @@ nvim
 
 ---
 
-### 🪟 **Windows**
+### **Windows**
 
-💡 *Hint:* If you already have an existing Neovim config, back it up first:
+*Hint:* If you already have an existing Neovim config, back it up first:
 
 ```cmd
 move "%USERPROFILE%\AppData\Local\nvim" "%USERPROFILE%\AppData\Local\nvim_backup\"
