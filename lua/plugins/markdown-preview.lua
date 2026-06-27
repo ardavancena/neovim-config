@@ -159,14 +159,14 @@
 
 -- This fucker took DAYS to fix!!
 return {
-    "MeanderingProgrammer/render-markdown.nvim",
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.nvim' },
-    config = function() 
-        require("render-markdown").setup({
-            completions = { lsp = { enabled = true } },
-                vim.keymap.set("n", "<leader>mp", function()
-                    require("render-markdown").toggle()
-                end, { desc = "Toggle Markdown Render" })
-        })
-    end,
+     "MeanderingProgrammer/render-markdown.nvim",
+     dependencies = { 'romus204/tree-sitter-manager.nvim', 'nvim-mini/mini.nvim' },
+     config = function() 
+         require("render-markdown").setup({
+             completions = { lsp = { enabled = true } },
+                 vim.keymap.set("n", "<leader>mp", function()
+                     require("render-markdown").toggle()
+                 end, { desc = "Toggle Markdown Render" })
+         })
+     end,
 }

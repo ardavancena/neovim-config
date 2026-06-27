@@ -179,12 +179,12 @@ nvim
 move "%USERPROFILE%\AppData\Local\nvim" "%USERPROFILE%\AppData\Local\nvim_backup\"
 ```
 
-➡️ *(Old config → Backup folder)*
+*(Old config → Backup folder)*
 
 Then clone the new configuration:
 
 ```cmd
-git clone https://github.com/ardavancena/neovim-config-v0.11.4.git "%USERPROFILE%\AppData\Local\nvim"
+git clone https://github.com/ardavancena/neovim-config.git "%USERPROFILE%\AppData\Local\nvim"
 ```
 
 Finally, open Neovim to initialize the setup:

@@ -39,32 +39,67 @@
 --    end,
 --}
 
+--return {
+--  "nvim-treesitter/nvim-treesitter",
+--  branch = "master",
+--  lazy = false,
+--  build = ':TSUpdate',
+--  config = function()
+--      require("nvim-treesitter").setup({
+--          ensure_installed = {
+--              "lua",
+--              "c",
+--              "cpp",
+--              "vim",
+--              "vimdoc",
+--              "bash",
+--              "python",
+--              "javascript",
+--              "html",
+--              "css",
+--              "markdown",
+--              "markdown_inline",
+--          },
+--          highlight = {
+--              enable = true,
+--          },
+--          indent = {
+--              enable = true,
+--          },
+--          auto_install = true,
+--      })
+--  end,
+--}
+
 return {
-  "nvim-treesitter/nvim-treesitter",
-  branch = "master",
-  lazy = false,
-  build = ':TSUpdate',
-  config = function()
-      require("nvim-treesitter").setup({
-          ensure_installed = {
-              "lua",
-              "c",
-              "cpp",
-              "vim",
-              "vimdoc",
-              "bash",
-              "python",
-              "javascript",
-              "html",
-              "css"
-          },
-          highlight = {
-              enable = true,
-          },
-          indent = {
-              enable = true,
-          },
-          auto_install = true,
-      })
-  end,
+    "romus204/tree-sitter-manager.nvim",
+    dependencies = {},
+    config = function()
+        require("tree-sitter-manager").setup({
+            parser_dir = vim.fn.stdpath("data") .. "/site/parser",
+            query_dir = vim.fn.stdpath("data") .. "/site/queries",
+            assume_installed = {},
+            ensure_installed = { "c", "cpp", "lua", "markdown", "markdown_inline", "go", "html", "css", "rust"},
+            border = "rounded",
+            auto_install = false,
+            noauto_install = {},
+            highlight = true,
+            nohighlight = {},
+            languages = {},
+            nerdfont = true,
+            use_repo_queries = true,
+        })
+    end,
+    {
+        -- kept nvim-treesitter for those queries
+        "nvim-treesitter/nvim-treesitter",
+        config = function()
+            require("nvim-treesitter").setup({
+                highlight = {
+                    enable = true,
+                    -- This will use nvim-treesitter's queries
+                },
+            })
+        end,
+    },
 }
